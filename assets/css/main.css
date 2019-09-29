@@ -140,8 +140,8 @@ a#logo{
 
 #iphone {
  position: relative;
- top: 60px;
- bottom: 60px;
+ margin-top: 50px;
+ margin-bottom: 90px;
 }
 
 /*Extra*/
@@ -200,11 +200,11 @@ a#logo{
 @media screen and (max-width: 767px) {
 
  #iphone > img {
-  max-height: 510px;
+  max-height: 350px;
  }
 
  #iphone > .container {
-  margin-top: 220px;
+  margin-top: 90px;
  }
 
  #background-iphonesection{
@@ -216,4 +216,194 @@ a#logo{
   bottom:0;
  }
 
+}
+
+#three-images > .container{
+ max-width: 95%;
+ margin-bottom:50px;
+}
+
+#three-images .container .first-background {
+ background: url(../img/ScooterHelbiz-2400.jpg);
+ min-height: 400px;
+ background-size: cover;
+ background-repeat: no-repeat;
+ margin-bottom: 40px;
+ color: #fff;
+ position:relative;
+}
+
+#first-background-text{
+ color: white;
+ position: absolute;
+ position: absolute;
+ left: 65%;
+ top: 50%;
+ transform: translate(0px, -50%);
+ text-align: center;
+}
+
+/*md*/
+@media screen and (min-width: 768px) and (max-width: 991px)  {
+ #three-images > .container {
+  max-width: 80%;
+ }
+}
+
+#second-background {
+ background: url(../img/HelbiZAPP.png)bottom no-repeat,linear-gradient(#41566a,#252f38) 50% no-repeat;
+ background-size: cover;
+}
+
+#third-background {
+ background: url(../img/Cities-1500.jpg);
+ background-size: cover;
+}
+
+#text-second-block-background, #text-third-block-background {
+ color: white;
+ position: absolute;
+ left: 50%;
+ top: 20%;
+ transform: translate(-50%);
+ width: 100%;
+ text-align: center;
+}
+
+
+#text-second-block-background h2, #text-third-block-background h2 {
+ font-size: 25px;
+ font-weight: 600;
+ margin-bottom: 8px;
+}
+
+#text-second-block-background p, #text-third-block-background p {
+ font-size: 20px;
+ font-weight: 400;
+ margin-bottom: 10px;
+}
+
+#text-second-block-background a, #text-third-block-background a {
+ text-decoration: none;
+ color: white;
+ margin-left: 20px;
+ margin-right: 20px;
+}
+
+#second-background{
+ background-size: 300px,100%;
+}
+
+#second-background, #third-background{
+ min-height: 400px;
+ width: 100%;
+ position: relative;
+}
+
+/*lg-md*/
+@media screen and (min-width: 768px){
+ .second-block{
+  margin-right: 20px;
+ }
+ .third-block{
+  margin-left: 20px;
+ }
+}
+
+/*xs*/
+@media screen and (max-width: 767px) {
+ #three-images .container [class*="col-xs"]{
+  margin-bottom: 20px;
+ }
+
+ #three-images .container .first-background {
+ background-position-x: -100px;
+ }
+
+ #first-background-text {
+  transform: translate(-50%, -50%);
+  left: 50%;
+  width: 100%;
+ }
+
+ #text-second-block-background, #text-third-block-background {
+  top: 12%;
+ }
+
+ #text-second-block-background h2, #text-third-block-background h2 {
+  font-size: 30px;
+ }
+
+ #text-second-block-background p, #text-third-block-background p {
+  font-size: 22px;
+ }
+
+ #text-second-block-background a, #text-third-block-background a {
+  font-size: 25px;
+ }
+
+}
+
+/*Social section*/
+
+#social {
+ background: url(../img/Social-Banner.jpg) 50% no-repeat;
+ background-size: cover;
+ height: 420px;
+ margin-bottom: 40px;
+ position: relative;
+}
+
+.social-container {
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%, -50%);
+ background: white;
+ height: 47%;
+ width: 450px;
+ color: black;
+}
+
+/*Tablet version*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+ .social-container {
+  width: 430px;
+ }
+}
+
+/*Smartphone version*/
+@media screen and (max-width: 767px) {
+ .social-container {
+  width: 410px;
+ }
+}
+
+/*extra*/
+@media screen and (max-width: 576px) {
+ .social-container {
+  width: 90%;
+ }
+}
+
+.social-container ul li{
+ float: left;
+ list-style-type: none;
+ filter: invert(1);
+ margin-top: 10px;
+}
+
+.social-container ul li + li{
+ margin-left: 30px;
+}
+
+.center {
+ position: absolute;
+ top:50%;
+ left:50%;
+ transform: translate(-50%, -50%);
+}
+
+.center h2 {
+ font-size: 32px;
 }
