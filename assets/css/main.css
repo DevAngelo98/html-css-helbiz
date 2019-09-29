@@ -407,3 +407,132 @@ a#logo{
 .center h2 {
  font-size: 32px;
 }
+
+/*Footer*/
+footer {
+ background-color: black;
+ color: white;
+ padding-top: 100px;
+ padding-bottom: 150px;
+}
+
+footer .container{
+ max-width: 90%;
+ padding-bottom: 64px;
+ border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+footer .container .logo img {
+ filter: invert(1);
+}
+
+footer .container [class*="col-"]{
+ padding-left: 15px;
+ padding-right: 15px;
+}
+
+.list ul li{
+ list-style-type: none;
+ padding: 4px 20px;
+}
+
+.list ul li:first-child{
+ font-weight: 600;
+ font-size: 16px;
+ padding-bottom: 16px;
+ padding-top: 0px;
+}
+
+.list ul li a {
+ text-decoration: none;
+ color: #696969;
+}
+
+/*Smartphone version*/
+@media screen and (max-width: 767px) {
+ footer .container{
+  max-width: 90%;
+  text-align: center;
+  padding-bottom: 64px;
+ }
+
+ footer .container [class*="col-"]{
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 20px;
+ }
+ footer .container .logo {
+  margin-bottom: 40px;
+ }
+ .list ul li{
+  padding-left:0px;
+  padding-right: 0px;
+ }
+
+ .down img + img {
+  margin-top: 10px;
+ }
+
+ .down .center{
+  top: 100%;
+ }
+}
+
+/*Tablet version*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+ footer .container{
+  max-width: 720px;
+ }
+ .termecondition .col-md-4{
+  margin-top: 10%;
+ }
+}
+
+/*extra*/
+@media screen and (min-width: 768px) {
+ footer .container{
+  max-width: 70%;
+ }
+}
+
+.termecondition {
+ margin-top: 64px;
+}
+
+.termecondition .first ul li{
+ float: left;
+ list-style-type: none;
+ margin-top: 10px;
+}
+
+.termecondition .first ul li + li {
+ margin-left: 28px;
+}
+
+.termecondition p{
+ color: white;
+ font-size: 22px;
+ margin-bottom: 20px;
+ margin-top: 10px;
+}
+
+.termecondition p:hover{
+ cursor: pointer;
+}
+
+.down.container {
+ text-align: center;
+ position: relative;
+ border-bottom: 0px;
+ margin-top: 40px;
+}
+
+.down.container img {
+ margin-left: 20px;
+ border: 1px solid rgb(255, 255, 255, 0.5);
+ border-radius: 10px;
+}
+
+.down.container img:hover {
+ cursor: pointer;
+}
