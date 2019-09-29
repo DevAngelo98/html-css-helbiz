@@ -4,6 +4,65 @@
  clear: both;
 }
 
+#navbar {
+ background-color: white;
+ position: fixed;
+ left: 0;
+ right: 0;
+ width: 100%;
+ z-index: 2;
+ padding: 20px 16px;
+}
+
+#navbar-logo {
+ padding: 8px;
+}
+
+#navbar-logo a {
+ font-size: 20px;
+ padding: 8px;
+}
+
+#navbar-menu ul{
+ float: right;
+ display: block;
+}
+
+#navbar-menu ul li {
+ list-style-type: none;
+ float: left;
+ margin-right: 24px;
+ padding: 8px;
+}
+
+#navbar-menu ul li a{
+ text-decoration: none;
+ color: black;
+ font-weight: bold;
+}
+
+#navbar-menu ul li:nth-of-type(6),
+#navbar-menu ul li:nth-of-type(7) {
+ border-right: 1px solid #ccc;
+ padding-right: 10px;
+ margin-right: 0px;
+}
+
+.toggle {
+ visibility: hidden;
+ width: 5%;
+ position: absolute;
+ height: 25px;
+ right: 30px;
+}
+
+.toggle img {
+ width: 22px;
+ float: right;
+ margin-right: 20px;
+ margin-top: 5px;
+}
+
 #cont-img {
  width: 100%;
  max-height: 570px;
@@ -13,42 +72,7 @@
 
 #cont-img > img {
  width: 100%;
-}
-
-#navbar{
- position: fixed;
- left: 0;
- right: 0;
- width: 100%;
- background-color: white;
- padding: 10px;
- z-index: 1;
-}
-
-#navbar-logo{
- margin-left: 170px;
- float: left;
-}
-
-a#logo{
- float: left;
- margin-bottom: 3px;
- margin-top: 3px;
-}
-
-#navbar-logo > #logo >img {
- width: 80px;
- height: 30px;
-}
-
-#navbar-ul {
- margin-right: 170px;
- float: right;
-}
-
-#navbar-ul ul li {
- float: left;
- list-style-type: none;
+ width: cover;
 }
 
 .layover {
@@ -67,7 +91,7 @@ a#logo{
  transform: translate(-50%, -50%);
  color: white;
  text-align: center;
-
+ min-width: 90%;
 }
 
 #text-social-header h1{
@@ -128,6 +152,10 @@ a#logo{
   padding-top: 40px;
   padding-bottom: 40px;
  }
+
+ #text-social-header h1{
+  font-size: 1.8em;
+ }
 }
 
 #background-iphonesection{
@@ -174,8 +202,79 @@ a#logo{
 
 }
 
+ .header-text-grey{
+  visibility: hidden;
+ }
+
+ .list-hidden {
+  visibility: hidden;
+  margin: 10%;
+ }
+
+ .list-hidden ul li {
+  list-style-type: none;
+  margin-bottom: 35px;
+ }
+
+ .list-hidden ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+ }
+
+ .vh {
+  visibility: hidden;
+ }
+
 /*xs-md*/
 @media screen and (max-width: 991px) {
+
+ .toggle {
+  visibility: visible;
+ }
+
+ .toggle:hover .header-text-grey{
+  visibility: visible;
+  position: fixed;
+  margin-top: 45px;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background-color: #f6f6f6;
+ }
+
+ .toggle:hover .header-text-grey p {
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+  position: absolute;
+  left: 10%;
+  top: 66%;
+  padding-bottom: 3%;
+  border-bottom: 2px solid #276EF1;
+  transform: translate(0, -50%);
+ }
+
+ .toggle:hover .vh {
+  position: fixed;
+  visibility: visible;
+  left: 0;
+  right: 0;
+  top: 145px;
+  height: 100vh;
+  background-color: white;
+  z-index: -1;
+ }
+
+ .toggle:hover .list-hidden{
+  visibility: visible;
+ }
+
+ .hidden{
+  visibility: hidden;
+  position: absolute;
+ }
 
  #iphone > .container {
   margin: 260px auto 40px auto;
